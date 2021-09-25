@@ -1,0 +1,29 @@
+﻿<Window x:Class="ExportForTiu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:ExportForTiu"
+        mc:Ignorable="d"
+        Title="Tiu file exporter" Height="342.91" Width="493.864" MinHeight="190" MinWidth="352" Initialized="Window_Initialized">
+    <Grid>
+        <StackPanel  Orientation="Vertical" VerticalAlignment="Center" Margin="5"  >
+            <StackPanel  Orientation="Horizontal" VerticalAlignment="Stretch">
+                <StackPanel  Orientation="Vertical" VerticalAlignment="Center" Margin="10"  >
+                    <TextBlock Text="Каталог выгрузки"></TextBlock>
+                    <TextBox x:Name="TextBox" HorizontalAlignment="Center" Height="23"  TextWrapping="Wrap" Text="c:\export\" Width="218" />
+                    <TextBlock Text="Дата последней выгрузки">
+                    </TextBlock>
+                    <DatePicker Name="DatePicker"/>
+                    <CheckBox x:Name="CbExportFotos" Content="Выгружать фотографии" Margin="10"/>
+                 
+
+                </StackPanel>
+                <Button x:Name="ExportButton" Content="Экспорт" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Margin="10" Click="button_Click"/>
+            </StackPanel>
+            <TextBox x:Name="UploadResultText" Height="76" Visibility="Hidden"  />
+            <ProgressBar Height="10" Name="ProgressBar" Visibility="Hidden"/>
+        </StackPanel>
+    </Grid>
+</Window>
