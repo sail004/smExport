@@ -53,7 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\BaseDataExporter.cs" />
-    <Compile Include="BL\SimpleDataExporter.cs" />
+    <Compile Include="BL\MultiColumnsDataExporter.cs" />
+    <Compile Include="BL\SimpleExcelDataExporter.cs" />
     <Compile Include="BL\TiuDataExporter.cs" />
     <Compile Include="BL\FbManager.cs" />
     <Compile Include="BL\FtpManager.cs" />
@@ -72,6 +73,11 @@
       <Project>{CF9592BD-537B-45ED-BF9D-3034D1929CE4}</Project>
       <Name>TiuLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BL\mainQuery.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

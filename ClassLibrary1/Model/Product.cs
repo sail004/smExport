@@ -14,5 +14,6 @@
 	    public string Rest { get; set; }
 	    public string Amount { get; set; }
 	    public string Manufacturer { get; set; }
-	}
+        public string NameStore { get; set; }
+    }
 }

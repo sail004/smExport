@@ -27,13 +27,13 @@ namespace SmExportForWeb
         {
             InitializeComponent();
             Title =
-                $"Sm web file exporter {Assembly.GetExecutingAssembly().GetName().Version}";
+                $"SM file exporter {Assembly.GetExecutingAssembly().GetName().Version}";
         }
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
             exportIsActive = true;
-            var dataExporter = new SimpleDataExporter();
+            var dataExporter = new MultiColumnsDataExporter();
             try
             {
                 var exportDateTime = DateTime.Now;
